@@ -34,13 +34,13 @@ def print_summary():
     print("Errors By IP's:\n")
     for ip , count in errors_by_ip.items():
         print(f" {ip} -> {count}")
-    
+    print("Errors By Messages:\n")
     for message, count in errors_by_message.items():
         print(f" {message} -> {count}")
     
     if errors_by_hour:
         peak_hour = max(errors_by_hour,key = errors_by_hour.get)
-        print(f"This Hour is peakest hour for error: {peak_hour}:00")
+        print(f"\n Peakest error hour: {peak_hour}:00")
 
 def main():
     log_files = "sample.log"
