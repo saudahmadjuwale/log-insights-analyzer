@@ -34,7 +34,7 @@ def print_summary():
     print("Errors By IP's:\n")
     for ip , count in errors_by_ip.items():
         print(f" {ip} -> {count}")
-    print("Errors By Messages:\n")
+    print("\n Errors By Messages:\n")
     for message, count in errors_by_message.items():
         print(f" {message} -> {count}")
     
